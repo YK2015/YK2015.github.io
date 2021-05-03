@@ -26,14 +26,3 @@ Yang Kuang is a Research Fellow working with [Prof. Zhenning Cai](https://blog.n
 
 
 
-# Contact
-
-\#07-15, Block S17
-
-Department of Mathematics
-National University of Singapore
-10 Lower Kent Ridge Road
-Singapore 119076
-
-Email: matkuan@nus.edu.sg
-
