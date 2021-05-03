@@ -10,7 +10,7 @@ redirect_from:
 
 <img src="../files/kuang_liu.JPG" alt="kuang_liu" style="zoom:50%;" />
 
-
+with my wife Ziqian Liu.
 
 # Basic information
 
