@@ -1,1 +1,1 @@
-[Welcome to my website!](yk2015.github.io)
+[Welcome to my website!](https://yk2015.github.io)
