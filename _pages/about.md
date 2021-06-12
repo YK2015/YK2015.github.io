@@ -8,9 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-<img src="../files/kuang_liu.JPG" alt="kuang_liu" style="zoom:50%;" />
-
-<div style="text-align: right"> <i>with my wife Ziqian Liu</i> </div>
 
 # Basic information
 
