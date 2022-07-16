@@ -1,0 +1,10 @@
+@article{gao2022orthogonalization,
+  title={An orthogonalization-free parallelizable framework for all-electron calculations in density functional theory},
+  author={Gao, Bin and Hu, Guanghui and Kuang, Yang and Liu, Xin},
+  journal={SIAM Journal on Scientific Computing},
+  volume={44},
+  number={3},
+  pages={B723--B745},
+  year={2022},
+  publisher={SIAM}
+}

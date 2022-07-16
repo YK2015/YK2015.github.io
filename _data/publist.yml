@@ -8,6 +8,15 @@
   year: 2022
   abstract: "We consider general systems of ordinary differential equations with monotonic Gibbs entropy, and introduce an entropic scheme that simply imposes an entropy fix after every time step of any existing time integrator. It is proved that in the general case, our entropy fix has only infinitesimal influence on the numerical order of the original scheme, and in many circumstances, it can be shown that the scheme does not affect the numerical order. Numerical experiments on the linear Fokker-Planck equation and nonlinear Boltzmann equation are carried out to support our numerical analysis."
 
+- title: "An orthogonalization-free parallelizable framework for all-electron calculations in density functional theory"
+  authors: Gao, B., Hu, G., Kuang, Y.*, Liu, X.
+  url: gao2022an
+  image: gao2022an.png
+  display: "SIAM Journal on Scientific Computing, 44 (3), B723-B745"
+  year: 2022
+  doi: 10.1137/20M1355884
+  abstract: "All-electron calculations play an important role in density functional theory, in which improving computational efficiency is one of the most needed and challenging tasks. In the model formulations, both the nonlinear eigenvalue problem and the total energy minimization problem pursue orthogonal solutions. Most existing algorithms for solving these two models invoke orthogonalization process either explicitly or implicitly in each iteration. Their efficiency suffers from this process in view of its cubic complexity and low parallel scalability in terms of the number of electrons for large scale systems. To break through this bottleneck, we propose an orthogonalization-free algorithm framework based on the total energy minimization problem. It is shown that the desired orthogonality can be gradually achieved without invoking orthogonalization in each iteration. Moreover, this framework fully consists of BLAS operations and thus can be naturally parallelized. The global convergence of the proposed algorithm is established. We also present a preconditioning technique which can dramatically accelerate the convergence of the algorithm. The numerical experiments on all-electron calculations show the effectiveness and high scalability of the proposed algorithm."
+
 # - title: ""
 #   authors:
 #     Bazilinskyy, P., ...
