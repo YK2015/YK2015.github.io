@@ -1,25 +1,107 @@
 ---
-permalink: /
-title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+title: "About"
+layout: gridlay
+sitemap: false
+permalink: /about/
 ---
 
-
-# Basic information
-
-Yang Kuang is a Research Fellow working with [Prof. Zhenning Cai](https://blog.nus.edu.sg/matcz/) in the [Departmen](https://www.math.nus.edu.sg/)[t of Mathematics](https://www.math.nus.edu.sg/) at the National University of Singapore.  He got his Ph.D. degree in Mathematics at theUniversity of Macau in 2019, under the supervision of [Prof. Guanghui Hu](https://www.fst.um.edu.mo/people/garyhu/). His research interests include adaptive finite element methods and efficient numerical algorithms for density functional theory. He is also interested in the complex Langevin methods in path integral computations.
+## About 
 
 
+{% for member in site.data.pi %}
 
-# Education
+<div class="row">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo-large }}" class="img-responsive avatar-about" />
+  <h3>{{ member.name }}</h3>
+  <i style="font-size:20px">{{ member.info }}</i><br>
 
-- Ph.D. in Computational Mathematics, 2019, University of Macau. Supervisor: [Prof. Guanghui Hu](https://www.fst.um.edu.mo/people/garyhu/)
-- M.sc. in Computational Mathematics, 2016, University of Macau. Supervisor: [Prof. Guanghui Hu](https://www.fst.um.edu.mo/people/garyhu/)
-- B.sc. in Information and Computational Science, 2013, Wuhan University.
+  {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-3x"></i></a> {% endif %}
+  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> {% endif %}
+  {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a> {% endif %}
+  {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-3x"></i></a> {% endif %}
+  {% if member.linkedin %} <a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a> {% endif %}
+  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a> {% endif %}
+  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-3x"></i></a> {% endif %}
+  {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-3x"></i></a> {% endif %}
+  <ul style="overflow: hidden">
+
+  {% if member.number_educ == 1 %}
+  <li> {{ member.education1 }} </li>
+  {% endif %}
+
+  {% if member.number_educ == 2 %}
+  <li> {{ member.education1 }} </li>
+  <li> {{ member.education2 }} </li>
+  {% endif %}
+
+  {% if member.number_educ == 3 %}
+  <li> {{ member.education1 }} </li>
+  <li> {{ member.education2 }} </li>
+  <li> {{ member.education3 }} </li>
+  {% endif %}
+
+  {% if member.number_educ == 4 %}
+  <li> {{ member.education1 }} </li>
+  <li> {{ member.education2 }} </li>
+  <li> {{ member.education3 }} </li>
+  <li> {{ member.education4 }} </li>
+  {% endif %}
+
+  {% if member.number_educ == 5 %}
+  <li> {{ member.education1 }} </li>
+  <li> {{ member.education2 }} </li>
+  <li> {{ member.education3 }} </li>
+  <li> {{ member.education4 }} </li>
+  <li> {{ member.education5 }} </li>
+  {% endif %}
+
+  {% if member.number_educ == 6 %}
+  <li> {{ member.education1 }} </li>
+  <li> {{ member.education2 }} </li>
+  <li> {{ member.education3 }} </li>
+  <li> {{ member.education4 }} </li>
+  <li> {{ member.education5 }} </li>
+  <li> {{ member.education6 }} </li>
+  {% endif %}
+
+  </ul>
+</div>
+
+{% endfor %}
+
+## Short biography
+
+<div class="short-bio">
+  Yang Kuang is an associate professor in School of Mathematics and Statistics at Guangdong University of Technology focusing on numerical methods for density functional theory and complex Langevin method in quantum chromodynamics. Prior to this, he was a Research Fellow in the Department of Mathematics working with Prof. Zhenning Cai at National University of Sinapore. He finished his PhD at University of Macau under the supervison of Prof. Guanghui Hu.
+</div>
 
 
+{% if site.data.awards %}
+## Awards
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for award in site.data.awards %}
+{{ forloop.index }}. {% if award.name_url %}<a href="{{ award.name_url }}" target="_blank">{% endif %}<strong>{{ award.name }}</strong>{% if award.name_url %}</a>{% endif %} {% if award.organisation %} from {% if award.organisation_url %}<a href="{{ award.organisation_url }}" target="_blank">{% endif %} {{ award.organisation }}{% if award.organisation_url %}</a>{% endif %}{% endif %}{% if award.subtitle %}: {{ award.subtitle }}{% endif %} ({{ award.year }}).
+{% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.grants %}
+## Grants
+<div class="rowl1" style="padding-top: 10px;">
+{% for grant in site.data.grants %}
+{{ forloop.index }}. {% if grant.name_url %}<a href="{{ grant.name_url }}" target="_blank">{% endif %}<strong>{{ grant.name }}</strong>{% if grant.name_url %}</a>{% endif %} {% if grant.organisation %} from {% if grant.organisation_url %}<a href="{{ grant.organisation_url }}" target="_blank">{% endif %} {{ grant.organisation }}{% if grant.organisation_url %}</a>{% endif %}{% endif %}{% if grant.subtitle %}: {{ grant.subtitle }}{% endif %} ({{ grant.year }}).
+{% endfor %}
+</div>
+{% endif %}
+
+{% if site.data.collaborators %}
+## Collaborations
+<div class="rowl1" style="padding-top: 10px;">
+
+{% for collaborator in site.data.collaborators %}
+{{ forloop.index }}. {% if collaborator.name_url %}<a href="{{ collaborator.name_url }}" target="_blank">{% endif %}<strong>{{ collaborator.name }}</strong>{% if collaborator.name_url %}</a>{% endif %} ({{ collaborator.field }}, {% if collaborator.institution_url %}<a href="{{ collaborator.institution_url }}" target="_blank">{% endif %}{{ collaborator.institution }}{% if collaborator.institution_url %}</a>{% endif %}).
+{% endfor %}
+</div>
+{% endif %}
 

@@ -1,0 +1,6 @@
+@article{cai2021entropic,
+  title={An entropic method for discrete systems with Gibbs entropy},
+  author={Cai, Zhenning and Hu, Jingwei and Kuang, Yang and Lin, Bo},
+  journal={arXiv preprint arXiv:2106.12428},
+  year={2021}
+}

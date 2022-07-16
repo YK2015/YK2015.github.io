@@ -1,0 +1,21 @@
+# ADD MSC AND BSC THESISES. AND PHD
+
+- title: "An entropic method for discrete systems with Gibbs entropy"
+  authors: Cai, Z., Hu, J., Kuang, Y., Lin, Bo.
+  url: cai2022an
+  image: cai2022an.png
+  display: SIAM Journal on Numerical Analysis (accepted), 2022
+  year: 2022
+  doi: https://doi.org/10.7717/peerj-cs.13
+  abstract: "We consider general systems of ordinary differential equations with monotonic Gibbs entropy, and introduce an entropic scheme that simply imposes an entropy fix after every time step of any existing time integrator. It is proved that in the general case, our entropy fix has only infinitesimal influence on the numerical order of the original scheme, and in many circumstances, it can be shown that the scheme does not affect the numerical order. Numerical experiments on the linear Fokker-Planck equation and nonlinear Boltzmann equation are carried out to support our numerical analysis."
+
+# - title: ""
+#   authors:
+#     Bazilinskyy, P., ...
+#   url: bazilinskyy20xx...
+#   image: dummy.jpg
+#   display: 
+#   year:
+#   doi:
+#   suppmat:
+#   abstract: ""

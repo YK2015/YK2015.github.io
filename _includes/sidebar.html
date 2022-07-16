@@ -1,25 +1,77 @@
-{% include base_path %}
+<div class="well" style="margin-bottom: 19px;">
+{% for member in site.data.pi %}
+<div class="row sidebar-info">
+  <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo-small }}" class="img-responsive" /></a>
+  <center><h4>{{ member.name }}</h4>
 
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
+   {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
+   {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
+   {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %}
+   {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-2x"></i></a> {% endif %}
+   {% if member.linkedin %} <a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a> {% endif %}
+   {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
+   {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
+   {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
+  </center>
+  <div style="overflow: hidden; padding-left: 13px; padding-right: 0px; padding-top: 5px; padding-bottom: 10px;">
+  {% if member.number_educ == 1 %}
+  {{ member.education1short }} </br>
+  {% endif %}
+
+  {% if member.number_educ == 2 %}
+  {{ member.education1short }} </br>
+  {{ member.education2short }} </br>
+  {% endif %}
+
+  {% if member.number_educ == 3 %}
+  {{ member.education1short }} </br>
+  {{ member.education2short }} </br>
+  {{ member.education3short }} </br>
+  {% endif %}
+
+  {% if member.number_educ == 4 %}
+  {{ member.education1short }} </br>
+  {{ member.education2short }} </br>
+  {{ member.education3short }} </br>
+  {{ member.education4short }} </br>
+  {% endif %}
+
+  {% if member.number_educ == 5 %}
+  {{ member.education1short }}</br>
+  {{ member.education2short }}</br>
+  {{ member.education3short }}</br>
+  {{ member.education4short }}</br>
+  {{ member.education5short }}</br>
+  {% endif %}
+
+  {% if member.number_educ == 6 %}
+  {{ member.education1short }} </br>
+  {{ member.education2short }} </br>
+  {{ member.education3short }} </br>
+  {{ member.education4short }} </br>
+  {{ member.education5short }} </br>
+  {{ member.education6short }} </br>
   {% endif %}
   </div>
+</div>
+
+{% endfor %}
+</div>
+
+<div style="margin-bottom: 14px; ">
+  <a class="twitter-timeline" data-height="470" data-theme="dark" href="https://twitter.com/bazilinskyy?ref_src=twsrc%5Etfw">Tweets by @bazilinskyy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+{% if site.data.events %}
+<div class="well" style="padding: 0px">
+<h4 style="padding-left: 10px">Upcoming Events</h4>
+  <div style="display: block; border-top: 1px solid rgba(145,165,180,.6); padding: 10px">
+    {% for article in site.data.events limit:5 %}
+    <strong>{{ article.date }}</strong>
+      <p>{{ article.headline }}<br/>
+      <i>{{ article.location }}</i></p>
+    {% endfor %}
+  </div>
+</div>
 {% endif %}
+

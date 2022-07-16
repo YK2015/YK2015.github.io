@@ -1,0 +1,42 @@
+- name: Prof. Guanghui Hu
+  name_url: https://ghhu.github.io/
+  field: Density functional theory
+  institution: Department of Mathematics, University of Macau
+  institution_url: https://www.fst.um.edu.mo/
+
+- name: Zhenning Cai
+  name_url: https://blog.nus.edu.sg/matcz/
+  field: complex Langevin method
+  institution: Department of Mathematics, National University of Singapore
+  institution_url: http://math.nus.edu.sg/
+
+- name: Bin Gao
+  name_url: https://www.gaobin.cc/
+  field: Riemannian Optimization
+  institution: University of Münster
+  institution_url: https://www.uni-muenster.de/AMM/en/wirth/index.shtml
+
+- name: Xin Liu
+  name_url: http://lsec.cc.ac.cn/~liuxin/
+  field: Numerical methods for optimization problems
+  institution: Chinese Academy of Sciences (CAS)
+  institution_url: http://lsec.cc.ac.cn/
+
+- name: Yedan Shen
+  name_url:
+  field: Density functional theory
+  institution: Guangzhou University
+  institution_url:
+
+
+- name:
+  name_url:
+  field:
+  institution:
+  institution_url:
+
+    #- name:
+    #  name_url:
+    #  field:
+    #  institution:
+    #  institution_url:
