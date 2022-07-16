@@ -1,0 +1,9 @@
+@article{yang2021h,
+  title={AN H-ADAPTIVE FINITE ELEMENT METHOD FOR {K}OHN-{S}HAM AND TIME-DEPENDENT {K}OHN-{S}HAM EQUATIONS},
+  author={Yang, Kuang and Yedan, Shen and Guanghui, Hu},
+  journal={Journal on Numerica Methods and Computer Applications},
+  volume={42},
+  number={1},
+  pages={33},
+  year={2021}
+}

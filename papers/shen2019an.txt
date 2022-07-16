@@ -1,0 +1,10 @@
+@article{shen2019an,
+  title={An asymptotics-based adaptive finite element method for Kohn--Sham equation},
+  author={Shen, Yedan and Kuang, Yang and Hu, Guanghui},
+  journal={Journal of Scientific Computing},
+  volume={79},
+  number={1},
+  pages={464--492},
+  year={2019},
+  publisher={Springer}
+}

@@ -1,0 +1,10 @@
+@article{cai2021on,
+  title={{On the validity of complex Langevin method for path integral computations}},
+  author={Cai, Zhenning and Dong, Xiaoyu and Kuang, Yang},
+  journal={SIAM Journal on Scientific Computing},
+  volume={43},
+  number={1},
+  pages={A685--A719},
+  year={2021},
+  publisher={SIAM}
+}

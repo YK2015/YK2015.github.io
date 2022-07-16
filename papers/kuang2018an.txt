@@ -1,0 +1,10 @@
+@article{kuang2018adaptive,
+  title={{An adaptive FEM with ITP approach for steady Schr{\"o}dinger equation}},
+  author={Kuang, Yang and Hu, Guanghui},
+  journal={International Journal of Computer Mathematics},
+  volume={95},
+  number={1},
+  pages={187--201},
+  year={2018},
+  publisher={Taylor \& Francis}
+}

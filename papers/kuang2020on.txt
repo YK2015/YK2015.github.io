@@ -1,0 +1,10 @@
+@article{kuang2020on,
+  title={{On stabilizing and accelerating SCF using ITP in solving Kohn--Sham equation}},
+  author={Kuang, Yang and Hu, Guanghui},
+  journal={Communications in Computational Physics},
+  volume={28},
+  number={3},
+  pages={999--1018},
+  year={2020},
+  publisher={GLOBAL SCIENCE PRESS ROOM 3208, CENTRAL PLAZA, 18 HARBOUR RD, WANCHAI, HONG~…}
+}
