@@ -18,7 +18,7 @@
   abstract: "All-electron calculations play an important role in density functional theory, in which improving computational efficiency is one of the most needed and challenging tasks. In the model formulations, both the nonlinear eigenvalue problem and the total energy minimization problem pursue orthogonal solutions. Most existing algorithms for solving these two models invoke orthogonalization process either explicitly or implicitly in each iteration. Their efficiency suffers from this process in view of its cubic complexity and low parallel scalability in terms of the number of electrons for large scale systems. To break through this bottleneck, we propose an orthogonalization-free algorithm framework based on the total energy minimization problem. It is shown that the desired orthogonality can be gradually achieved without invoking orthogonalization in each iteration. Moreover, this framework fully consists of BLAS operations and thus can be naturally parallelized. The global convergence of the proposed algorithm is established. We also present a preconditioning technique which can dramatically accelerate the convergence of the algorithm. The numerical experiments on all-electron calculations show the effectiveness and high scalability of the proposed algorithm."
 
 - title: "Regularization of the complex Langevin method"
-  authors: Cai, Z., Kuang, Y., Tan, H. K.
+  authors: Cai, Z., Kuang, Y.*, Tan, H. K.
   url: cai2022regularization
   image: cai2022regularization.png
   display: Physical Review D, 105 (1), 014508	
