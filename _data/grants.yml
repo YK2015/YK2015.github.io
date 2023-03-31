@@ -1,5 +1,15 @@
+- name: Orthogonalization-free methods and adaptive methods in electronic structure calculations
+  name_url:
+  organisation: NSFC青年科学基金项目
+  year: 2023.1-2025.12
+
+- name: Kohn-Sham密度泛函理论中的免正交化方法
+  name_url:
+  organisation: 广州市科学技术局
+  year: 2023.4-2025.3
+
 - name: Startup fund
   name_url: 
   organisation: GDUT
   organisation_url: https://www.gdut.edu.cn
-  year: 2021
+  year: 2022
