@@ -16,7 +16,7 @@ In the area of the Kohn-Sham equation, I am working on several aspects, includin
 Regarding complex Langevin methods in quantum chromodynamics, I has shown interest in the development of stabilization techniques. These approaches aim to prevent divergence and converge to the correct results obtained through these methods.
 
 
-
-
+## 📢 News 
+1. 
 
 
