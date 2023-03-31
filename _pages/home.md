@@ -16,8 +16,11 @@ In the area of the Kohn-Sham equation, I am working on several aspects, includin
 Regarding complex Langevin methods in quantum chromodynamics, I has shown interest in the development of stabilization techniques. These approaches aim to prevent divergence and converge to the correct results obtained through these methods.
 
 
-## 📰 News 
-+ 2022-6-28: Our paper "An Entropic Method for Discrete Systems with Gibbs Entropy" has been accepted by _SIAM Journal on Numerical Analysis
-_.
+<br/>
 
+<div class="well-md">
+  <h3>📰 News</h3>
++ 2022-6-28: Our paper "An Entropic Method for Discrete Systems with Gibbs Entropy" has been accepted by _SIAM Journal on Numerical Analysis_.
+
+</div>
 
