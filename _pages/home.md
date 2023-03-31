@@ -9,16 +9,12 @@ permalink: /
 code {padding: 6px 8px; font-size: 90%;}
 </style>
 
-Welcome to my personal homepage! I am currently working as an associate professor in  [School of Mathematics and Statistics](https://math.gdut.edu.cn) of [Guangdong University of Techonology](https://www.gdut.edu.cn). My focus is on numerical methods for density functional theory and complex Langevin methods in quantum chromodynamics..
+Welcome to my personal homepage! I am currently working as an associate professor in  [School of Mathematics and Statistics](https://math.gdut.edu.cn) of [Guangdong University of Techonology](https://www.gdut.edu.cn). My focus is on numerical methods for the Kohn--Sham equatio and complex Langevin methods in quantum chromodynamics.
 
-During 2019-2021 I was postdoctoral researcher in the . My focus was on 
+In the area of the Kohn-Sham equation, I am working on several aspects, including the design of adaptive finite element methods for discretization, the development of orthogonality-free methods for the eigenvalue problem, and the generation of quality initial guesses to reduce divergence issues related to nonlinearity.
 
-During my PhD, my aim was to develop ..
+Regarding complex Langevin methods in quantum chromodynamics, I has shown interest in the development of stabilization techniques. These approaches aim to prevent divergence and converge to the correct results obtained through these methods.
 
-
-
-### Multi-mesh finite element method for Kohn--Sham equation
-I am currently engaged in research on 
 
 
 <br/>
