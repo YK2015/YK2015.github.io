@@ -1,6 +1,27 @@
 @article{cai2021entropic,
-  title={An entropic method for discrete systems with Gibbs entropy},
-  author={Cai, Zhenning and Hu, Jingwei and Kuang, Yang and Lin, Bo},
-  journal={arXiv preprint arXiv:2106.12428},
-  year={2021}
+  author = {Cai, Zhenning and Hu, Jingwei and Kuang, Yang and Lin, Bo},
+  title = {An Entropic Method for Discrete Systems with Gibbs Entropy},
+  journal = {SIAM Journal on Numerical Analysis},
+  volume = {60},
+  number = {4},
+  pages = {2345-2371},
+  year = {2022},
+  doi = {10.1137/21M1429023},
+  
+  URL = { 
+      
+          https://doi.org/10.1137/21M1429023
+      
+      
+  
+  },
+  eprint = { 
+    
+        https://doi.org/10.1137/21M1429023
+    
+    
+
+}
+,
+    abstract = { We consider general systems of ordinary differential equations with monotonic Gibbs entropy and introduce an entropic scheme that simply imposes an entropy fix after every time step of any existing time integrator. It is proved that in the general case, our entropy fix has only infinitesimal influence on the numerical order of the original scheme, and in many circumstances, it can be shown that the scheme does not affect the numerical order. Numerical experiments on the linear Fokker--Planck equation and nonlinear Boltzmann equation are carried out to support our numerical analysis. }
 }
