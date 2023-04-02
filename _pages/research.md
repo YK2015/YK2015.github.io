@@ -36,7 +36,7 @@ permalink: /research/
 
   The complex Langevin method, a numerical method used to compute the ensemble average with a complex partition function, often suffers from runaway instability. We study the regularization of the complex Langevin method via augmenting the action with a stabilization term.
 
-	~[Regularized observable](https://yk2015.github.io/images/research/2022Reg2.png)
+	![Regularized observable](https://yk2015.github.io/images/research/2022Reg2.png)
 
   <ul style="overflow: hidden">
   </ul>
