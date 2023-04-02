@@ -1,3 +1,13 @@
+- authors: Kuang, Y., Hu, G.
+  title: A multi-mesh adaptive finite element method for Kohn--Sham equation
+  conf: CSIAM 2022, Online
+  year: 2022
+
+- authors: Kuang, Y., Cai, Z.,
+  title: Complex Langevin method for path integral computations
+  conf: Seminar @ Key Laboratory of Mathematical Modelling and High Performance Computing of Air Vehicles MIIT, NUAA, Nanjing, China.
+  year: 2021
+
 - authors: Kuang, Y., Gao, B., Hu, G., Liu, X.
   title: "An Orthogonalization-free Parallelizable Framework for All-electron Calculations"
   conf: Seminar @ BNU-UIC Research center for mathematics, Zhuhai, China.
