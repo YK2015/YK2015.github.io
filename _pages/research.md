@@ -21,8 +21,7 @@ permalink: /research/
   <img src="{{ site.url }}{{ site.baseurl }}/images/research/C384.png" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 210px" />
   <h4>Orthogonalization-free framework for the ground state calculation</h4>
 
-	The efficiency of the all-electron calculations suffers from the orthogonalization process in view of its cubic complexity and low parallel scalability in terms of the number of electrons for large scale systems. To break through this bottleneck, we propose an orthogonalization-free algorithm framework based on the total energy minimization problem. 
- 
+  The efficiency of the all-electron calculations suffers from the orthogonalization process in view of its cubic complexity and low parallel scalability in terms of the number of electrons for large scale systems. To break through this bottleneck, we propose an orthogonalization-free algorithm framework based on the total energy minimization problem. 
 
   <ul style="overflow: hidden">
   </ul>
