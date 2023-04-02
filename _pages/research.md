@@ -18,8 +18,8 @@ permalink: /research/
 </div>
 
 <div class="rowl1">
-  <h4>Orthogonalization-free framework for the ground state calculation</h4>
   <img src="{{ site.url }}{{ site.baseurl }}/images/research/C384.png" class="img-responsive" style="float: right; border-radius: 5px; width: 280px; height: 210px" />
+  <h4>Orthogonalization-free framework for the ground state calculation</h4>
 
 	The efficiency of the all-electron calculations suffers from the orthogonalization process in view of its cubic complexity and low parallel scalability in terms of the number of electrons for large scale systems. To break through this bottleneck, we propose an orthogonalization-free algorithm framework based on the total energy minimization problem. 
    
@@ -29,10 +29,16 @@ permalink: /research/
 </div>
 
 <div class="rowl1">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/research/cai2022an.png" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 158px" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/research/2022Reg.png" class="img-responsive" style="float: left; border-radius: 5px; width: 280px; height: 196px" />
   <h4>Regularization of the Complex Langevin method</h4>
 
-  I am currently engaged in research on 
+  The complex Langevin method, a numerical method used to compute the ensemble average with a complex partition function, often suffers from runaway instability. We study the regularization of the complex Langevin method via augmenting the action with a stabilization term.
+	$$
+	\begin{aligned}
+\langle O \rangle_s &= \frac{1}{Z_s} \int_{\operatorname{U}(1)} O(-\ii \log U) \sum_{\substack{g \in \mathfrak{g} \\ \text{ s.t.} \exp(g) = U}} \exp \left(-S(-\ii \log U) + \frac{s g^2}{2} \right) \mathrm{d}U, \\
+Z_s &= \int_{\operatorname{U}(1)} \sum_{\substack{g \in \mathfrak{g} \\ \text{ s.t.} \exp(g) = U}} \exp \left(-S(-\ii \log U) + \frac{s g^2}{2} \right) \mathrm{d}U.
+\end{aligned}
+	$$
 
   <ul style="overflow: hidden">
   </ul>
