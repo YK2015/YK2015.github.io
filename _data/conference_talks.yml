@@ -1,4 +1,14 @@
 - authors: Kuang, Y., Hu, G.
+  title: Multi-mesh adaptive finite element method for eigenvalue problems
+  conf: CSIAM 2023, Kunming
+  year: 2023
+
+- authors: Kuang, Y., Hu, G.
+  title: A multi-mesh adaptive finite element method for Kohn--Sham equation
+  conf: ICIAM 2023 TOKYO,Tokyo
+  year: 2023
+
+- authors: Kuang, Y., Hu, G.
   title: A multi-mesh adaptive finite element method for Kohn--Sham equation
   conf: CSIAM 2022, Online
   year: 2022
