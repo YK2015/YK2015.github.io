@@ -20,7 +20,7 @@ Regarding complex Langevin methods in quantum chromodynamics, I has shown intere
 
 <div class="well-md">
   <h3>📰 News</h3>
-+ 2023-9-24: New preprint "[Towards chemical accuracy using a multi-mesh adaptive finite element method in all-electron density functional theory.](https://arxiv.org/abs/2310.15651)"
++ 2023-10-24: New preprint "[Towards chemical accuracy using a multi-mesh adaptive finite element method in all-electron density functional theory.](https://arxiv.org/abs/2310.15651)"
 <!-- + 2022-6-28: Our paper "An Entropic Method for Discrete Systems with Gibbs Entropy" has been accepted by _SIAM Journal on Numerical Analysis_. -->
 
 </div>
