@@ -1,3 +1,13 @@
+- name: High-order numerical methods in density functional theory
+  name_url:
+  organisation: NSFC数学天元数学访问学者项目
+  year: 2024.1-2024.12
+
+- name: 多套网格自适应有限元方法在电子结构计算中的应用
+  name_url:
+  organisation: 南京航空航天大学“飞行器数学建模与高性能计算”工信部重点实验室
+  year: 2024.1-2025.12
+
 - name: Orthogonalization-free methods and adaptive methods in electronic structure calculations
   name_url:
   organisation: NSFC青年科学基金项目
@@ -12,4 +22,4 @@
   name_url: 
   organisation: GDUT
   organisation_url: https://www.gdut.edu.cn
-  year: 2022
+  year: 2022.1-2026.12
