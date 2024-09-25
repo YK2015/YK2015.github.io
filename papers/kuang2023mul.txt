@@ -2,7 +2,10 @@
   title={Towards chemical accuracy using a multi-mesh adaptive finite element
   method in all-electron density functional theory},
   author={Kuang, Yang and Shen, Yedan and Hu, Guanghui},
-  journal={arXiv preprint arXiv:2310.15651},
-  year={2023}
+  journal={Journal of Computational Physics},
+  volume={518},
+  pages={113312},
+  year={2024},
+  publisher={Elsevier}
 }
 

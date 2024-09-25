@@ -4,10 +4,10 @@
   method in all-electron density functional theory"
   authors: <b>Yang Kuang</b>, Yedan Shen, Guanghui Hu
   image: kuang2023mul.png
-  display: Under revision
+  display: Journal of Computational Physics, 518, 113321
   url: kuang2023mul
-  year: 2023
-  arxiv: 2310.15651
+  year: 2024
+  doi: 10.1016/j.jcp.2024.113312
   abstract: "Chemical accuracy serves as an important metric for assessing the effectiveness of the numerical method in Kohn--Sham density functional theory. It is found that to achieve chemical accuracy, not only the Kohn--Sham wavefunctions but also the Hartree potential, should be approximated accurately. Under the adaptive finite element framework, this can be implemented by constructing the a posteriori error indicator based on approximations of the aforementioned two quantities. However, this way results in a large amount of computational cost. To reduce the computational cost, we propose a novel multi-mesh adaptive method, in which the Kohn--Sham equation and the Poisson equation are solved in two different meshes on the same computational domain, respectively. With the proposed method, chemical accuracy can be achieved with less computational consumption compared with the adaptive method on a single mesh, as demonstrated in a number of numerical experiments."
 
 - title: "An entropic method for discrete systems with Gibbs entropy"
