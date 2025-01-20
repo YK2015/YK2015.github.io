@@ -1,0 +1,6 @@
+@article{kuang2024split,
+  title={A novel splitting strategy to accelerate solving generalized eigenvalue problem from {Kohn--Sham} density functional theory},
+  author={Kuang, Yang and Hu, Guanghui},
+  journal={arXiv preprint arXiv:2411.04661},
+  year={2024}
+}

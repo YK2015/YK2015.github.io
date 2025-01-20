@@ -1,0 +1,6 @@
+@article{wang2024hierarchical,
+  title={A hierarchical splines-based $h$-adaptive isogeometric solver for all-electron {Kohn--Sham} equation},
+  author={Wang, Tao and Kuang, Yang and Zhang, Ran and Hu, Guanghui},
+  journal={arXiv preprint arXiv:2412.12580},
+  year={2024}
+}

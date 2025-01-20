@@ -1,0 +1,6 @@
+@article{luo2024high,
+  title={A high-order accurate moving mesh finite element method for the radial {Kohn--Sham} equation},
+  author={Luo, Zheming and Kuang, Yang},
+  journal={arXiv preprint arXiv:2411.04701},
+  year={2024}
+}
