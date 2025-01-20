@@ -1,6 +1,6 @@
 # ADD MSC AND BSC THESISES. AND PHD
 #
-- title: "A hierarchical splines-based $h$-adaptive isogeometric solver for all-electron Kohn--Sham equation"
+- title: "A hierarchical splines-based h-adaptive isogeometric solver for all-electron Kohn--Sham equation"
   authors: Tao Wang, <b>Yang Kuang</b>*, Ran Zhang, Guanghui Hu
   image: wang2024hierarchical.png
   url: wang2024hierarchical
