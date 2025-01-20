@@ -8,23 +8,23 @@
   arxiv: 2412.12580
   abstract: "In this paper, a novel $h$-adaptive isogeometric solver utilizing high-order hierarchical splines is proposed to solve the all-electron Kohn--Sham equation. In virtue of the smooth nature of Kohn--Sham wavefunctions across the domain, except at the nuclear positions, high-order globally regular basis functions such as B-splines are well suited for achieving high accuracy. To further handle the singularities in the external potential at the nuclear positions, an $h$-adaptive framework based on the hierarchical splines is presented with a specially designed residual-type error indicator, allowing for different resolutions on the domain. The generalized eigenvalue problem raising from the discretized Kohn--Sham equation is effectively solved by the locally optimal block preconditioned conjugate gradient (LOBPCG) method with an elliptic preconditioner, and it is found that the eigensolver's convergence is independent of the spline basis order. A series of numerical experiments confirm the effectiveness of the $h$-adaptive framework, with a notable experiment that the numerical accuracy $10^{-3} \mathrm{~Hartree/particle}$ in the all-electron simulation of a methane molecule is achieved using only $6355$ degrees of freedom, demonstrating the competitiveness of our solver for the all-electron Kohn--Sham equation."
 
-- title: "A high-order accurate moving mesh finite element method for the radial Kohn--Sham equation"
-  authors: Zheming Luo, <b>Yang Kuang</b>*
-  image: luo2024high.png
-  url: luo2024high
-  year: 2024
-  arxiv: 2411.04701
-  abstract: "In this paper, we introduce a highly accurate and efficient numerical solver for the radial Kohn--Sham equation. The equation is discretized using an up to 10-th order finite element method, with its performance further improved by incorporating a parameter-free moving mesh technique. This approach greatly reduces the number of elements required to achieve the desired precision. In practice, the mesh redistribution involves no more than three steps, ensuring the algorithm remains computationally efficient. Remarkably, with a maximum of $13$ elements, we successfully reproduce the NIST database results for elements with atomic numbers ranging from $1$ to $92$."
-
-
-- title: "A novel splitting strategy to accelerate solving generalized eigenvalue problem from Kohn--Sham density functional theory"
-  authors: <b>Yang Kuang</b>, Guanghui Hu
-  image: kuang2024split.png
-  url: kuang2024split
-  year: 2024
-  arxiv: 2411.04661
-  abstract: "In this paper, we propose a novel eigenpair-splitting method, inspired by the divide-and-conquer strategy, for solving the generalized eigenvalue problem arising from the Kohn-Sham equation. Unlike the commonly used domain decomposition approach in divide-and-conquer, which solves the problem on a series of subdomains, our eigenpair-splitting method focuses on solving a series of subequations defined on the entire domain. This method is realized through the integration of two key techniques: a multi-mesh technique for generating approximate spaces for the subequations, and a soft-locking technique that allows for the independent solution of eigenpairs. Numerical experiments show that the proposed eigenpair-splitting method can dramatically enhance simulation efficiency, and its potential towards practical applications is also demonstrated well through an example of the HOMO-LUMO gap calculation. Furthermore, the optimal strategy for grouping eigenpairs is discussed, and the possible improvements to the proposed method are also outlined." 
-
+  #- title: "A high-order accurate moving mesh finite element method for the radial Kohn--Sham equation"
+  #  authors: Zheming Luo, <b>Yang Kuang</b>*
+  #  image: luo2024high.png
+  #  url: luo2024high
+  #  year: 2024
+  #  arxiv: 2411.04701
+  #  abstract: "In this paper, we introduce a highly accurate and efficient numerical solver for the radial Kohn--Sham equation. The equation is discretized using an up to 10-th order finite element method, with its performance further improved by incorporating a parameter-free moving mesh technique. This approach greatly reduces the number of elements required to achieve the desired precision. In practice, the mesh redistribution involves no more than three steps, ensuring the algorithm remains computationally efficient. Remarkably, with a maximum of $13$ elements, we successfully reproduce the NIST database results for elements with atomic numbers ranging from $1$ to $92$."
+  #
+  #
+  #- title: "A novel splitting strategy to accelerate solving generalized eigenvalue problem from Kohn--Sham density functional theory"
+  #  authors: <b>Yang Kuang</b>, Guanghui Hu
+  #  image: kuang2024split.png
+  #  url: kuang2024split
+  #  year: 2024
+  #  arxiv: 2411.04661
+  #  abstract: "In this paper, we propose a novel eigenpair-splitting method, inspired by the divide-and-conquer strategy, for solving the generalized eigenvalue problem arising from the Kohn-Sham equation. Unlike the commonly used domain decomposition approach in divide-and-conquer, which solves the problem on a series of subdomains, our eigenpair-splitting method focuses on solving a series of subequations defined on the entire domain. This method is realized through the integration of two key techniques: a multi-mesh technique for generating approximate spaces for the subequations, and a soft-locking technique that allows for the independent solution of eigenpairs. Numerical experiments show that the proposed eigenpair-splitting method can dramatically enhance simulation efficiency, and its potential towards practical applications is also demonstrated well through an example of the HOMO-LUMO gap calculation. Furthermore, the optimal strategy for grouping eigenpairs is discussed, and the possible improvements to the proposed method are also outlined." 
+  #
 - title: "Towards chemical accuracy using a multi-mesh adaptive finite element
   method in all-electron density functional theory"
   authors: <b>Yang Kuang</b>, Yedan Shen, Guanghui Hu
