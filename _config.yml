@@ -4,7 +4,7 @@ email: ykuang@gdut.edu.cn
 description: Personal webpage of Dr. Yang Kuang
 baseurl: ""
 url: ""
-affiliation: <a href="https://math.gdut.edu.cn/" target="_blank">School of Mathematics and Statistics</a> at Guangdong Univerisity of Technology.
+affiliation: <a href="https://math.gdut.edu.cn/" target="_blank">School of Mathematics and Statistics</a> at Guangdong University of Technology.
 
 # Google analytics ID
 google_analytics: 
@@ -12,7 +12,7 @@ google_analytics:
 # Location info. (shown in footer)
 location: >
   School of Mathematics and Statistics<br/>
-  Guangdong Univerisity of Technology<br/>
+  Guangdong University of Technology<br/>
   No. 161 Yinglong Road, Tianhe District, Guangzhou<br/>
   China<br/>
 
@@ -26,17 +26,26 @@ nav_pages:
   - name: publications
   - name: talks
   - name: research
-  # - name: software
-  # - name: team
-  # - name: education
-  # - name: volunteering
 
 # Do you want to group your publications by year? {true/false}
 group_pub_by_year: true
 
 include:
-  - .htaccess
   - _pages
+
+# Keep local tools, documentation, and backup files out of the published site.
+exclude:
+  - scripts
+  - makebib.py
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - "**/*.bak"
+  - "**/*~"
+  - "**/*.orig"
+  - "**/*.rej"
 
 sass:
   sass_dir: _sass

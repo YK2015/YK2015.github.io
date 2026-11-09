@@ -1,0 +1,13 @@
+{%- if include.key -%}
+  {%- assign text_en = site.data.translations.en.content[include.key] -%}
+  {%- assign text_zh = site.data.translations['zh-CN'].content[include.key] -%}
+{%- else -%}
+  {%- assign text_en = include.en -%}
+  {%- assign text_zh = include.zh | default: include.en -%}
+{%- endif -%}
+{%- if include.block -%}
+<div data-localized lang="en">{{ text_en | markdownify }}</div>
+<div data-localized lang="zh-CN">{{ text_zh | markdownify }}</div>
+{%- else -%}
+<span data-localized lang="en">{{ text_en }}</span><span data-localized lang="zh-CN">{{ text_zh }}</span>
+{%- endif -%}

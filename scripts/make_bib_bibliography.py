@@ -36,5 +36,5 @@ if __name__ == '__main__':
     dir_out = os.path.join(os.path.abspath(os.path.join(__file__, '../..')),
                            'papers')
     # concatenated file
-    file_out = 'bazilinskyy.bib'
+    file_out = 'kuang.bib'
     concat_bib(dir_in, dir_out, file_out)

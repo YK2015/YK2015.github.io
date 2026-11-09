@@ -1,83 +1,51 @@
 ---
 title: "About"
+translation_key: about
 layout: gridlay
 sitemap: false
 permalink: /about/
 ---
 
-## About 
+<h2 id="about">{% include localized.html key="profile" %}</h2>
 
 
 {% for member in site.data.pi %}
 
 <div class="row">
   <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo-large }}" class="img-responsive avatar-about" />
-  <h3>{{ member.name }}</h3>
-  <i style="font-size:20px">{{ member.info }}</i><br>
+  <h3>{% include localized.html en=member.name zh=member.name_zh %}</h3>
+  <i style="font-size:20px">{% include localized.html en=member.info zh=member.info_zh %}</i><br>
 
-  {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-3x"></i></a> {% endif %}
-  {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-3x"></i></a> {% endif %}
-  {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-3x"></i></a> {% endif %}
-  {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-3x"></i></a> {% endif %}
-<!--  {% if member.linkedin %} <a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a> {% endif %}-->
-  {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a> {% endif %}
-<!--  {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-3x"></i></a> {% endif %}-->
-  {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-3x"></i></a> {% endif %}
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  {% endif %}
-
-  {% if member.number_educ == 6 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  <li> {{ member.education5 }} </li>
-  <li> {{ member.education6 }} </li>
-  {% endif %}
-
+  <div class="profile-links" markdown="0">
+    {% if member.website %}<a href="{{ member.website }}" target="_blank" rel="noopener" aria-label="Website"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a>{% endif %}
+    {% if member.email %}<a href="mailto:{{ member.email }}" aria-label="Email"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>{% endif %}
+    {% if member.cv %}{% include cv-link.html member=member size="3x" %}{% endif %}
+    {% if member.orcid %}<a href="{{ member.orcid }}" target="_blank" rel="noopener" aria-label="ORCID"><i class="ai ai-orcid-square ai-3x" aria-hidden="true"></i></a>{% endif %}
+    {% if member.scholar %}<a href="{{ member.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar-square ai-3x" aria-hidden="true"></i></a>{% endif %}
+    {% if member.github %}<a href="{{ member.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>{% endif %}
+  </div>
+  <ul class="profile-background" style="overflow: hidden">
+  {% for index in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: index %}
+    {% assign education_zh_key = education_key | append: '_zh' %}
+    {% assign education_en = member[education_key] %}
+    {% assign education_zh = member[education_zh_key] %}
+    <li>{% include localized.html en=education_en zh=education_zh %}</li>
+  {% endfor %}
   </ul>
 </div>
 
 {% endfor %}
 
-## Short biography
+<h2 id="short-biography">{% include localized.html key="short_biography" %}</h2>
 
 <div class="short-bio">
-  Yang Kuang is an associate professor in School of Mathematics and Statistics at Guangdong University of Technology focusing on numerical methods for density functional theory and complex Langevin method in quantum chromodynamics. Prior to this, he was a Research Fellow in the Department of Mathematics working with Prof. Zhenning Cai at National University of Sinapore. He finished his PhD at University of Macau under the supervison of Prof. Guanghui Hu.
+  {% include localized.html key="biography" block=true %}
 </div>
 
 
 {% if site.data.awards %}
-## Awards
+<h2 id="awards">{% include localized.html key="awards" %}</h2>
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for award in site.data.awards %}
@@ -87,20 +55,22 @@ permalink: /about/
 {% endif %}
 
 {% if site.data.grants %}
-## Grants
+<h2 id="grants">{% include localized.html key="grants" %}</h2>
 <div class="rowl1" style="padding-top: 10px;">
+<ol>
 {% for grant in site.data.grants %}
-{{ forloop.index }}. {% if grant.name_url %}<a href="{{ grant.name_url }}" target="_blank">{% endif %}<strong>{{ grant.name }}</strong>{% if grant.name_url %}</a>{% endif %} {% if grant.organisation %} from {% if grant.organisation_url %}<a href="{{ grant.organisation_url }}" target="_blank">{% endif %} {{ grant.organisation }}{% if grant.organisation_url %}</a>{% endif %}{% endif %}{% if grant.subtitle %}: {{ grant.subtitle }}{% endif %} ({{ grant.year }}).
+<li><strong>{% include localized.html en=grant.name zh=grant.name_zh %}</strong>{% if grant.organisation %}, {% include localized.html en=grant.organisation zh=grant.organisation_zh %}{% endif %}{% if grant.number %}, No. {{ grant.number }}{% endif %} ({{ grant.year }}){% if grant.note %}, {% include localized.html en=grant.note zh=grant.note_zh %}{% endif %}.</li>
 {% endfor %}
+</ol>
 </div>
 {% endif %}
 
 {% if site.data.collaborators %}
-## Collaborations
+<h2 id="collaborations">{% include localized.html key="collaborations" %}</h2>
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for collaborator in site.data.collaborators %}
-{{ forloop.index }}. {% if collaborator.name_url %}<a href="{{ collaborator.name_url }}" target="_blank">{% endif %}<strong>{{ collaborator.name }}</strong>{% if collaborator.name_url %}</a>{% endif %} ({{ collaborator.field }}, {% if collaborator.institution_url %}<a href="{{ collaborator.institution_url }}" target="_blank">{% endif %}{{ collaborator.institution }}{% if collaborator.institution_url %}</a>{% endif %}).
+{{ forloop.index }}. {% if collaborator.name_url %}<a href="{{ collaborator.name_url }}" target="_blank">{% endif %}<strong>{% include localized.html en=collaborator.name zh=collaborator.name_zh %}</strong>{% if collaborator.name_url %}</a>{% endif %} ({% include localized.html en=collaborator.field zh=collaborator.field_zh %}, {% if collaborator.institution_url %}<a href="{{ collaborator.institution_url }}" target="_blank">{% endif %}{% include localized.html en=collaborator.institution zh=collaborator.institution_zh %}{% if collaborator.institution_url %}</a>{% endif %}).
 {% endfor %}
 </div>
 {% endif %}

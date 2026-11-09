@@ -1,5 +1,33 @@
-- date: 30.11.2021
-  headline: ""
+- date: "2026-10-07"
+  headline: 'Our paper "[High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization](https://arxiv.org/abs/2609.30138)" has been submitted.'
 
-- date: 26.11.2021
-  headline: ""
+- date: "2026-04-09"
+  headline: 'Our paper "[A multi-mesh adaptive finite element method for solving the Gross-Pitaevskii equation](https://arxiv.org/abs/2601.08299)" has been accepted by _Advances in Applied Mathematics and Mechanics_.'
+
+- date: "2026-01-25"
+  headline: 'Our paper "[A multi-mesh adaptive finite element method for solving the Gross-Pitaevskii equation](https://arxiv.org/abs/2601.08299)" has been submitted to _Advances in Applied Mathematics and Mechanics_.'
+
+- date: "2026-01-24"
+  headline: 'Our paper "[A novel splitting strategy to accelerate solving generalized eigenvalue problem from Kohn--Sham density functional theory](https://arxiv.org/abs/2411.04661)" has been accepted by _Computer Physics Communications_, 322 (2026), 110056.'
+
+- date: "2025-04-10"
+  headline: 'Our paper "[A hierarchical splines-based h-adaptive isogeometric solver for all-electron Kohn--Sham equation](https://arxiv.org/abs/2412.12580)" has been accepted by _Journal of Computational Physics_.'
+
+- date: "2025-01-14"
+  headline: 'Our paper "[A high-order accurate moving mesh finite element method for the radial Kohn--Sham equation](https://doi.org/10.1080/00268976.2025.2455533)" has been accepted by _Molecular Physics_.'
+
+- date: "2024-12-17"
+  headline: 'New preprint - "[A hierarchical splines-based h-adaptive isogeometric solver for all-electron Kohn--Sham equation](https://arxiv.org/abs/2412.12580)"'
+
+- date: "2024-11-07"
+  headline: 'New preprint - "[A high-order accurate moving mesh finite element method for the radial Kohn--Sham equation](https://arxiv.org/abs/2411.04701)"'
+
+- date: "2024-11-07"
+  headline: 'New preprint - "[A novel splitting strategy to accelerate solving generalized eigenvalue problem from Kohn--Sham density functional theory](https://arxiv.org/abs/2411.04661)"'
+
+- date: "2024-07-24"
+  headline: 'Our paper "[Towards chemical accuracy using a multi-mesh adaptive finite element method in all-electron density functional theory](https://doi.org/10.1016/j.jcp.2024.113312)" has been accepted by _Journal of Computational Physics_.'
+
+# Previously unpublished news, retained for reference:
+# - date: "2022-06-28"
+#   headline: 'Our paper "An Entropic Method for Discrete Systems with Gibbs Entropy" has been accepted by _SIAM Journal on Numerical Analysis_.'

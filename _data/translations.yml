@@ -1,0 +1,94 @@
+en:
+  ui:
+    light: Light theme
+    dark: Dark theme
+    theme: Appearance
+    language: Language
+    navigation: Toggle navigation
+    pages:
+      home: Home
+      about: About
+      publications: Publications
+      talks: Talks
+      research: Research
+      news: News
+      not_found: Page Not Found
+  content:
+    home: Home
+    about: About
+    profile: About
+    publications: Publications
+    talks: Talks
+    research: Research
+    news: News
+    all_news: All news
+    short_biography: Short biography
+    grants: Grants
+    collaborations: Collaborations
+    awards: Awards
+    conference_presentations: Conference presentations
+    invited_talks: Talks and webinars
+    chairing_sessions: Chairing sessions
+    working_documents: Working documents
+    journal_papers: Journal Papers and Proceedings
+    corresponding_author: Corresponding author.
+    upcoming_events: Upcoming Events
+    research_multimesh: Multi-mesh adaptive finite element method for Kohn–Sham equation
+    research_orthogonalization: Orthogonalization-free framework for the ground state calculation
+    research_langevin: Regularization of the Complex Langevin method
+    not_found: Sorry, but the page you were trying to view does not exist.
+    home_intro: |
+      Welcome to my personal homepage! I am currently working as an associate professor in the [School of Mathematics and Statistics](https://math.gdut.edu.cn) of [Guangdong University of Technology](https://www.gdut.edu.cn). My focus is on numerical methods for the Kohn--Sham equation and complex Langevin methods in quantum chromodynamics.
+
+      In the area of the Kohn-Sham equation, I am working on several aspects, including the design of adaptive and high-order methods for discretization, the development of orthogonality-free methods for the discretized problem, and the generation of quality initial guesses to reduce divergence issues related to nonlinearity.
+
+      Regarding complex Langevin methods in quantum chromodynamics, I have shown interest in the development of stabilization techniques. These approaches aim to prevent divergence and converge to the correct results obtained through these methods.
+    biography: >-
+      Yang Kuang is an associate professor in the School of Mathematics and Statistics at Guangdong University of Technology focusing on numerical methods for density functional theory and complex Langevin method in quantum chromodynamics. Prior to this, he was a Research Fellow in the Department of Mathematics working with Prof. Zhenning Cai at the National University of Singapore. He finished his PhD at the University of Macau under the supervision of Prof. Guanghui Hu.
+zh-CN:
+  ui:
+    light: 浅色主题
+    dark: 深色主题
+    theme: 显示主题
+    language: 显示语言
+    navigation: 展开或收起导航
+    pages:
+      home: 首页
+      about: 关于我
+      publications: 学术论文
+      talks: 学术报告
+      research: 研究方向
+      news: 最新动态
+      not_found: 页面未找到
+  content:
+    home: 首页
+    about: 关于我
+    profile: 个人资料
+    publications: 学术论文
+    talks: 学术报告
+    research: 研究方向
+    news: 最新动态
+    all_news: 全部动态
+    short_biography: 个人简介
+    grants: 科研项目
+    collaborations: 合作学者
+    awards: 获奖情况
+    conference_presentations: 会议与学术报告
+    invited_talks: 受邀报告与线上讲座
+    chairing_sessions: 会议主持
+    working_documents: 工作论文
+    journal_papers: 期刊论文与会议论文
+    corresponding_author: 通讯作者。
+    upcoming_events: 近期活动
+    research_multimesh: 用于 Kohn–Sham 方程的多套网格自适应有限元方法
+    research_orthogonalization: 基态计算的免正交化算法框架
+    research_langevin: 复朗之万方法的正则化
+    not_found: 抱歉，你访问的页面不存在。
+    home_intro: |
+      欢迎访问我的个人主页！我现任[广东工业大学](https://www.gdut.edu.cn)[数学与统计学院](https://math.gdut.edu.cn)副教授，主要研究 Kohn–Sham 方程的数值方法，以及量子色动力学中的复朗之万方法。
+
+      在 Kohn–Sham 方程的数值求解方面，我关注自适应方法与高阶离散方法的设计、离散问题的免正交化算法，以及通过构造合适的初值来减少非线性求解中的发散问题。
+
+      对于量子色动力学中的复朗之万方法，我关注稳定化技术，希望抑制数值发散，并使计算收敛到正确的结果。
+    biography: >-
+      况阳现任广东工业大学数学与统计学院副教授，主要研究密度泛函理论的数值方法，以及量子色动力学中的复朗之万方法。此前在新加坡国立大学数学系从事博士后研究（Research Fellow），合作者为蔡振宁教授；在澳门大学获得博士学位，导师为胡光辉教授。

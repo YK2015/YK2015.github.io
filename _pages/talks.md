@@ -1,14 +1,15 @@
 ---
 title: "Talks"
+translation_key: talks
 layout: gridlay
 sitemap: false
 permalink: /talks/
 ---
 
-# Talks
+<h1 id="talks">{% include localized.html key="talks" %}</h1>
 
 {% if site.data.conference_talks %}
-## Conference presentations
+<h2 id="conference-presentations">{% include localized.html key="conference_presentations" %}</h2>
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for talk in site.data.conference_talks %}
@@ -18,7 +19,7 @@ permalink: /talks/
 {% endif %}
 
 {% if site.data.invited_talks %}
-## Talks and webinars
+<h2 id="talks-and-webinars">{% include localized.html key="invited_talks" %}</h2>
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for talk in site.data.invited_talks %}
@@ -28,7 +29,7 @@ permalink: /talks/
 {% endif %}
 
 {% if site.data.chairing %}
-## Chairing sessions
+<h2 id="chairing-sessions">{% include localized.html key="chairing_sessions" %}</h2>
 <div class="rowl1" style="padding-top: 10px;">
 
 {% for session in site.data.chairing %}

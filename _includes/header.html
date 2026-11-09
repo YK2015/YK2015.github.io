@@ -1,23 +1,32 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-		<div class="navbar-header">
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-	      <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">{{ site.title | escape }}</a>
-
-		</div>
-		<div class="collapse navbar-collapse" id="navbar-collapse-1">
-		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-	        {% for page in site.nav_pages %}
-	          <li><a href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">{{page.name | capitalize }}</a></li>
-	        {% endfor %}
-		  </ul>
-		</div>
+  <div class="container-fluid site-header">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+    <div class="site-controls">
+      <div class="preference-controls">
+        <div class="preference-group" role="group" aria-label="Appearance" data-preference-label="theme">
+          <button type="button" class="preference-button" data-theme-choice="light" aria-pressed="false" aria-label="Light theme" data-preference-label="light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          </button>
+          <button type="button" class="preference-button" data-theme-choice="dark" aria-pressed="true" aria-label="Dark theme" data-preference-label="dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.3A9 9 0 0 1 10.7 3.1 9 9 0 1 0 20.9 13.3Z"/></svg>
+          </button>
+        </div>
+        <div class="preference-group" role="group" aria-label="Language" data-preference-label="language">
+          <button type="button" class="preference-button language-choice" data-language-choice="en" lang="en" aria-pressed="true">Eng</button>
+          <button type="button" class="preference-button language-choice" data-language-choice="zh-CN" lang="zh-CN" aria-pressed="false">中文</button>
+        </div>
+      </div>
+      <button class="site-menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation" data-preference-label="navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div class="site-navigation" id="site-navigation">
+      <ul class="nav navbar-nav">
+        <li><a href="{{ '/' | relative_url }}">{% include localized.html key="home" %}</a></li>
+        {% for nav_page in site.nav_pages %}
+        <li><a href="{{ '/' | append: nav_page.name | append: '/' | relative_url }}">{% include localized.html key=nav_page.name %}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </nav>

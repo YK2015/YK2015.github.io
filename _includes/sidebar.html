@@ -2,71 +2,34 @@
 {% for member in site.data.pi %}
 <div class="row sidebar-info">
   <a href="{{site.url}}{{site.baseurl}}/about"><img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo-small }}" class="img-responsive" /></a>
-  <center><h4>{{ member.name }}</h4>
+  <center><h4>{% include localized.html en=member.name zh=member.name_zh %}</h4>
 
    {% if member.website %}<a href="{{ member.website }}" target="_blank"><i class="fa fa-home fa-2x"></i></a> {% endif %}
    {% if member.email %}<a href="mailto:{{ member.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a> {% endif %}
-   {% if member.cv %} <a href="{{ member.cv }}" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a> {% endif %}
+   {% if member.cv %}{% include cv-link.html member=member size="2x" %}{% endif %}
    {% if member.orcid %} <a href="{{ member.orcid }}" target="_blank"><i class="ai ai-orcid-square ai-2x"></i></a> {% endif %}
    {% if member.linkedin %} <a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a> {% endif %}
    {% if member.scholar %} <a href="{{ member.scholar }}" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a> {% endif %}
    {% if member.researchgate %} <a href="{{ member.researchgate }}" target="_blank"><i class="ai ai-researchgate-square ai-2x"></i></a> {% endif %}
    {% if member.github %} <a href="{{ member.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a> {% endif %}
   </center>
-  <div style="overflow: hidden; padding-left: 13px; padding-right: 0px; padding-top: 5px; padding-bottom: 10px;">
-  {% if member.number_educ == 1 %}
-  {{ member.education1short }} </br>
-  {% endif %}
-
-  {% if member.number_educ == 2 %}
-  {{ member.education1short }} </br>
-  {{ member.education2short }} </br>
-  {% endif %}
-
-  {% if member.number_educ == 3 %}
-  {{ member.education1short }} </br>
-  {{ member.education2short }} </br>
-  {{ member.education3short }} </br>
-  {% endif %}
-
-  {% if member.number_educ == 4 %}
-  {{ member.education1short }} </br>
-  {{ member.education2short }} </br>
-  {{ member.education3short }} </br>
-  {{ member.education4short }} </br>
-  {% endif %}
-
-  {% if member.number_educ == 5 %}
-  {{ member.education1short }}</br>
-  {{ member.education2short }}</br>
-  {{ member.education3short }}</br>
-  {{ member.education4short }}</br>
-  {{ member.education5short }}</br>
-  {% endif %}
-
-  {% if member.number_educ == 6 %}
-  {{ member.education1short }} </br>
-  {{ member.education2short }} </br>
-  {{ member.education3short }} </br>
-  {{ member.education4short }} </br>
-  {{ member.education5short }} </br>
-  {{ member.education6short }} </br>
-  {% endif %}
+  <div class="profile-summary" style="overflow: hidden; padding-left: 13px; padding-right: 0px; padding-top: 5px; padding-bottom: 10px;">
+  {% for index in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: index | append: 'short' %}
+    {% assign education_zh_key = education_key | append: '_zh' %}
+    {% assign education_en = member[education_key] %}
+    {% assign education_zh = member[education_zh_key] %}
+    {% include localized.html en=education_en zh=education_zh %}<br/>
+  {% endfor %}
   </div>
 </div>
 
 {% endfor %}
 </div>
 
-<!--
-<div style="margin-bottom: 14px; ">
-  <a class="twitter-timeline" data-height="470" data-theme="dark" href="https://twitter.com/bazilinskyy?ref_src=twsrc%5Etfw">Tweets by @bazilinskyy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
--->
-
 {% if site.data.events %}
 <div class="well" style="padding: 0px">
-<h4 style="padding-left: 10px">Upcoming Events</h4>
+<h4 style="padding-left: 10px">{% include localized.html key="upcoming_events" %}</h4>
   <div style="display: block; border-top: 1px solid rgba(145,165,180,.6); padding: 10px">
     {% for article in site.data.events limit:5 %}
     <strong>{{ article.date }}</strong>

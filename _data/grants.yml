@@ -1,25 +1,34 @@
-- name: High-order numerical methods in density functional theory
-  name_url:
-  organisation: NSFC数学天元数学访问学者项目
-  year: 2024.1-2024.12
+- name: NSFC General Program
+  name_zh: 国家自然科学基金面上项目
+  number: "12671469"
+  year: 2027.01–2030.12
 
-- name: 多套网格自适应有限元方法在电子结构计算中的应用
-  name_url:
-  organisation: 南京航空航天大学“飞行器数学建模与高性能计算”工信部重点实验室
-  year: 2024.1-2025.12
+- name: NSFC Tianyuan Fund
+  name_zh: 国家自然科学基金数学天元基金项目
+  number: "12326362"
+  year: 2024.01–2024.12
+  note: with Prof. Tao Tang
+  note_zh: 合作老师：汤涛院士
 
-- name: Orthogonalization-free methods and adaptive methods in electronic structure calculations
-  name_url:
-  organisation: NSFC青年科学基金项目
-  year: 2023.1-2025.12
+- name: NSFC Young Scientists Fund (Type C)
+  name_zh: 国家自然科学基金青年科学基金项目
+  number: "12201130"
+  year: 2023.01–2025.12
 
-- name: Kohn-Sham密度泛函理论中的免正交化方法
-  name_url:
-  organisation: 广州市科学技术局
-  year: 2023.4-2025.3
+- name: Natural Science Foundation of Guangdong Province
+  name_zh: 广东省自然科学基金面上项目
+  number: "2026A1515011703"
+  year: 2026.01–2028.12
 
-- name: Startup fund
-  name_url: 
-  organisation: GDUT
-  organisation_url: https://www.gdut.edu.cn
-  year: 2022.1-2026.12
+- name: Guangdong Provincial Association for Science and Technology
+  name_zh: 广东省科协青年科技人才培育计划
+  year: 2025.01–2026.12
+
+- name: Key Laboratory of Mathematical Modelling and High Performance Computing of Air Vehicles (NUAA), MIIT
+  name_zh: 飞行器数学建模与高性能计算工信部重点实验室开放课题
+  year: 2024.01–2025.12
+
+- name: Guangzhou Municipal Science and Technology Bureau
+  name_zh: 广州市基础研究计划基础与应用基础研究项目
+  number: "2023A04J1321"
+  year: 2023.04–2025.03

@@ -1,11 +1,12 @@
 ---
 title: "Publications"
+translation_key: publications
 layout: gridlay
 sitemap: false
 permalink: /publications/
 ---
 
-# Publications
+<h1 id="publications">{% include localized.html key="publications" %}</h1>
 
 {% assign yeartest = true %}
 {% for publi in site.data.publist %}
@@ -15,7 +16,7 @@ permalink: /publications/
 {% endfor %}
 
 {% if yeartest == false %}
-## Working documents
+<h2 id="working-documents">{% include localized.html key="working_documents" %}</h2>
 {% endif %}
 
 {% for publi in site.data.publist %}
@@ -81,7 +82,7 @@ permalink: /publications/
 {% endfor %}
 
 {% if site.group_pub_by_year == true %}{% else %}
-## Journal Papers and Proceedings 
+<h2 id="journal-papers-and-proceedings">{% include localized.html key="journal_papers" %}</h2>
 {% endif %}
 
 {% for myyear in site.data.years %}
@@ -165,4 +166,4 @@ permalink: /publications/
 
 {% endfor %}
 
-\* Corresponding author.
+<p>* {% include localized.html key="corresponding_author" %}</p>

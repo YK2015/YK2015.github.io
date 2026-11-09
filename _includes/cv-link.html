@@ -1,0 +1,3 @@
+{%- assign chinese_cv = include.member.cv_zh | default: include.member.cv -%}
+<a href="{{ include.member.cv | relative_url }}" data-localized lang="en" target="_blank" rel="noopener" aria-label="English CV" title="English CV"><i class="ai ai-cv-square ai-{{ include.size }}" aria-hidden="true"></i></a>
+<a href="{{ chinese_cv | relative_url }}" data-localized lang="zh-CN" target="_blank" rel="noopener" aria-label="中文简历" title="中文简历"><i class="ai ai-cv-square ai-{{ include.size }}" aria-hidden="true"></i></a>
